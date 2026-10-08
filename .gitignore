@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+data/
+node_modules/
+.npm-cache/
+coverage/
+*.log
+*.sqlite*
+*.cosbak

@@ -1,0 +1,3205 @@
+You are Codex acting as the lead software architect, senior full-stack engineer, AI systems engineer, security engineer, DevOps engineer, QA engineer, database architect, automation engineer, and technical product manager for this project.
+
+Your mission is to design and build a production-quality AI business operating system that helps operate and grow a Shopify e-commerce store.
+
+This system must function as ONE COORDINATED AI COMPANY, not as a loose collection of unrelated AI chatbots.
+
+The human user is the CEO and final authority.
+
+Every AI agent works for the CEO.
+
+The AI organization must be able to coordinate research, product development, design generation, marketing, customer intelligence, storefront improvements, operations, analytics, compliance, and executive reporting through a shared system.
+
+The system must become more useful over time as it accumulates verified company knowledge, market research, product performance data, customer insights, campaign results, experiments, operational history, design results, and lessons learned.
+
+The primary design philosophy is:
+
+MAXIMUM USEFUL AUTONOMY WITH HUMAN CONTROL.
+
+The AI should automate low-risk work aggressively while ensuring that consequential actions remain subject to the appropriate authorization, approval, audit, and rollback controls.
+
+Do not build this as a novelty AI demo.
+
+Build it as a serious software product intended to become the operating system for an AI-assisted Shopify company.
+
+==================================================
+1. CORE PRODUCT CONCEPT
+==================================================
+
+The product should resemble a digital company.
+
+The CEO logs into one command center.
+
+The primary executive AI is:
+
+Борис — Chief Operating Officer
+
+The CEO should be able to communicate with Борис using natural language.
+
+Example:
+
+CEO:
+"Борис, how did the company perform yesterday?"
+
+Борис should retrieve information from the relevant systems and agents and return a concise executive briefing covering:
+
+- revenue
+- orders
+- average order value
+- product performance
+- profitability where reliable cost data exists
+- marketing performance
+- inventory warnings
+- customer issues
+- operational problems
+- research discoveries
+- products being developed
+- designs being generated
+- pending approvals
+- experiments
+- website issues
+- current priorities
+- recommended next actions
+
+The CEO must also be able to communicate directly with every AI employee.
+
+The system should support commands such as:
+
+"Борис, find three new product opportunities."
+
+"Борис, tell Product to build a collection for our strongest customer segment."
+
+"Борис, why did sales fall this week?"
+
+"Борис, show me everything waiting for approval."
+
+"Борис, what are the agents working on?"
+
+"Борис, pause all automatic product generation."
+
+"Борис, ask Wilhelm to investigate mobile conversion."
+
+"Борис, what did we learn from the products launched last month?"
+
+"Борис, which products should we test next?"
+
+The system should maintain structured business memory and should not rely on one enormous conversation history.
+
+==================================================
+2. ORGANIZATIONAL STRUCTURE
+==================================================
+
+The company hierarchy is:
+
+Human CEO
+
+↓
+
+Борис — Chief Operating Officer
+
+↓
+
+Departments:
+
+1. Marketing
+2. Product
+3. Technology
+4. Analytics & Strategy
+5. Customer Intelligence
+6. Operations
+
+Independent oversight:
+
+7. Quality & Compliance
+
+The system must make adding future departments and agents straightforward.
+
+Do not hardcode business logic in a way that makes new agents difficult to add.
+
+Each AI employee must have a structured Agent Definition.
+
+Agent Definition should include:
+
+- unique agent ID
+- name
+- title
+- department
+- manager
+- mission
+- responsibilities
+- tools
+- read permissions
+- write permissions
+- prohibited actions
+- escalation target
+- autonomy level
+- approval requirements
+- KPIs
+- schedules
+- memory access
+- output schemas
+- allowed integrations
+- status
+- current task
+- task history
+- cost limits
+
+==================================================
+3. EXECUTIVE OFFICE
+==================================================
+
+Борис — Chief Operating Officer
+
+Борис is the primary orchestrator of the entire company.
+
+Борис should not attempt to personally perform every specialist task.
+
+He should break CEO objectives into structured projects and delegate those projects to the relevant departments.
+
+Responsibilities:
+
+- interpret CEO intent
+- create projects
+- break objectives into tasks
+- determine which departments are required
+- delegate responsibilities
+- coordinate cross-department workflows
+- manage task dependencies
+- identify bottlenecks
+- monitor agent activity
+- monitor company KPIs
+- consolidate department reports
+- identify conflicts between recommendations
+- prioritize work
+- maintain company objectives
+- request human approval
+- surface high-priority issues
+- produce executive summaries
+- generate daily reports
+- generate weekly reports
+- recommend next actions
+- track major initiatives
+- identify blocked work
+- detect excessive agent loops
+- detect wasted AI spending
+- detect stalled projects
+
+Example:
+
+If the CEO says:
+
+"Create five products based on emerging trends."
+
+Борис should not simply generate five random products.
+
+He should initiate a workflow such as:
+
+Mason conducts market research.
+
+↓
+
+Marisha evaluates product opportunities.
+
+↓
+
+Марк creates design research and briefs.
+
+↓
+
+Jack generates creative assets.
+
+↓
+
+Garry performs quality assurance.
+
+↓
+
+Tyler creates Shopify product drafts.
+
+↓
+
+CEO approval occurs when required.
+
+↓
+
+Катерина develops marketing.
+
+↓
+
+Benjamin measures results.
+
+↓
+
+Nikolai analyzes customer response.
+
+↓
+
+Мария analyzes business performance.
+
+↓
+
+Results are stored in Company Memory.
+
+Борис must be able to tell the CEO:
+
+- what is happening
+- who is working on it
+- why the project was started
+- what evidence supports it
+- what stage it is in
+- what is blocked
+- what needs approval
+- what happens next
+
+Борис may NEVER bypass approval rules.
+
+==================================================
+4. MARKETING DEPARTMENT
+==================================================
+
+Анна — Director of Marketing
+
+Анна manages the Marketing Department.
+
+Responsibilities:
+
+- manage marketing strategy
+- manage marketing calendar
+- translate business objectives into marketing plans
+- coordinate research with Mason
+- coordinate campaign execution with Катерина
+- collaborate with Product
+- collaborate with Analytics
+- collaborate with Customer Intelligence
+- review campaign proposals
+- monitor campaign results
+- manage marketing priorities
+- report to Борис
+
+Анна manages:
+
+Mason — Market Research Analyst
+
+Катерина — Marketing Campaign Manager
+
+
+Mason — Market Research Analyst
+
+Mason is responsible for understanding what is happening in the broader market.
+
+Responsibilities:
+
+- market trend research
+- niche discovery
+- competitor research
+- consumer-interest research
+- search trend analysis
+- social trend analysis
+- seasonal opportunity research
+- pricing research
+- keyword research
+- emerging audience research
+- competitor positioning analysis
+- product category research
+- cultural trend research
+- demand signal research
+
+Mason must use evidence.
+
+Every meaningful research finding should store:
+
+- title
+- summary
+- finding
+- evidence
+- source
+- source URL when applicable
+- source date
+- retrieval date
+- confidence
+- topic
+- category
+- relevant customer segment
+- commercial implication
+- risks
+- expiration/review date
+
+Research classifications:
+
+FACT
+
+OBSERVATION
+
+HYPOTHESIS
+
+RECOMMENDATION
+
+Mason must not present hypotheses as established facts.
+
+Mason shares relevant research with:
+
+- Анна
+- Marisha
+- Марк
+- София
+- Мария
+- Jessica
+- Company Knowledge Base
+
+
+Катерина — Marketing Campaign Manager
+
+Катерина takes research, product information, customer insights, and strategy and turns them into marketing campaigns.
+
+Responsibilities:
+
+- campaign strategy
+- campaign concepts
+- product-launch campaigns
+- promotional strategy
+- social media campaign drafts
+- email campaign drafts
+- SEO recommendations
+- landing-page messaging
+- promotional calendar
+- audience targeting recommendations
+- offer positioning
+- A/B test concepts
+- copywriting
+- messaging frameworks
+- post-campaign analysis
+
+Every campaign should contain:
+
+- campaign name
+- business objective
+- target audience
+- persona
+- product
+- value proposition
+- hypothesis
+- marketing channel
+- creative concept
+- copy
+- CTA
+- KPI
+- start date
+- end date
+- budget
+- approval state
+- actual result
+- lessons learned
+
+Катерина must use:
+
+- market research
+- customer personas
+- customer insights
+- product data
+- product performance
+- historical campaigns
+- company strategy
+- Brand Bible
+
+Paid advertising spending requires CEO approval.
+
+==================================================
+5. PRODUCT DEPARTMENT
+==================================================
+
+Алекс — Director of Product
+
+Алекс manages the entire product-development organization.
+
+Responsibilities:
+
+- oversee product discovery
+- oversee design research
+- oversee creative generation
+- oversee QA
+- oversee product production
+- prioritize product opportunities
+- maintain the product pipeline
+- coordinate with Marketing
+- coordinate with Analytics
+- ensure business feedback influences future products
+- report to Борис
+
+Алекс manages:
+
+Marisha — Product Research Analyst
+
+Марк — Design Research Analyst
+
+Jack — Daily Design Generation Specialist
+
+Garry — Design Quality Assurance Specialist
+
+Tyler — Product Production Specialist
+
+
+Marisha — Product Research Analyst
+
+Marisha determines WHAT the company should potentially sell.
+
+Responsibilities:
+
+- product opportunity research
+- product demand research
+- category research
+- competitor product research
+- pricing research
+- margin research
+- saturation analysis
+- product lifecycle analysis
+- seasonal opportunity analysis
+- customer-product fit
+- historical product performance analysis
+- product risk analysis
+
+Marisha should use:
+
+- Mason's research
+- customer personas
+- customer insights
+- Shopify sales data
+- historical product performance
+- seasonal data
+- competitor research
+- company strategy
+
+Every proposed opportunity should produce a Product Opportunity Report.
+
+Product Opportunity Report:
+
+- opportunity name
+- concept
+- target persona
+- customer need
+- supporting evidence
+- demand indicators
+- recommended product type
+- likely selling-price range
+- estimated cost if reliable data exists
+- expected margin if calculable
+- competitor landscape
+- saturation level
+- seasonality
+- creative requirements
+- marketing opportunity
+- operational risks
+- intellectual-property risks
+- confidence
+- sources
+- recommendation
+
+Product research must not automatically publish products.
+
+
+Марк — Design Research Analyst
+
+Марк determines what visual concepts should be explored.
+
+Responsibilities:
+
+- visual trend research
+- aesthetic research
+- typography research
+- color research
+- competitor creative research
+- niche-specific visual research
+- target audience aesthetic analysis
+- historical design performance analysis
+- seasonal creative research
+- motif research
+- composition research
+- visual culture research
+
+Марк creates structured Design Briefs.
+
+Every Design Brief should include:
+
+- title
+- concept
+- business objective
+- target persona
+- product category
+- visual style
+- composition guidance
+- typography guidance
+- color guidance
+- emotional objective
+- customer motivation
+- market research references
+- previous performance references
+- inspiration notes
+- originality constraints
+- prohibited elements
+- intellectual-property considerations
+- confidence
+- recommended variants
+
+Марк must never instruct Jack to copy another company's design.
+
+Competitor research should inspire original creative work only.
+
+
+Jack — Daily Design Generation Specialist
+
+Jack produces original visual assets from approved Design Briefs.
+
+Jack runs on a configurable schedule.
+
+The CEO must control:
+
+- designs generated per day
+- design categories
+- generation schedule
+- generation budget
+- image provider
+- maximum iterations
+- approved product categories
+
+Use a provider abstraction such as:
+
+ImageGenerationProvider
+
+Do not permanently hardcode design generation to one vendor.
+
+Store for every design:
+
+- design ID
+- Design Brief ID
+- prompt
+- constraints
+- provider
+- model
+- generation parameters
+- output
+- file location
+- creation date
+- version
+- status
+- target product
+- associated persona
+- associated research
+- generation cost
+
+Jack cannot publish products.
+
+Every design must be reviewed by Garry.
+
+
+Garry — Design Quality Assurance Specialist
+
+Garry is the QA gate for visual assets.
+
+Check:
+
+- resolution
+- dimensions
+- transparency
+- print suitability
+- visual defects
+- spelling
+- typography
+- alignment
+- composition
+- unwanted artifacts
+- duplication
+- similarity to existing internal designs
+- excessive similarity to competitors
+- adherence to Design Brief
+- Brand Bible compliance
+- prohibited content
+- obvious copyright concerns
+- obvious trademark concerns
+- product compatibility
+
+Statuses:
+
+PASS
+
+REVISE
+
+REJECT
+
+PASS:
+Asset proceeds to product production.
+
+REVISE:
+Send structured revision instructions to Jack.
+
+REJECT:
+Store rejection reason and prevent downstream use.
+
+Every QA review must be stored.
+
+
+Tyler — Product Production Specialist
+
+Tyler turns approved creative assets into Shopify-ready products.
+
+Responsibilities:
+
+- select appropriate product templates
+- place designs on products
+- create product mockups
+- create product images
+- create variants
+- create SKUs where appropriate
+- recommend pricing
+- create product titles
+- create descriptions
+- create product tags
+- create SEO metadata
+- organize collections
+- create Shopify drafts
+- connect to print-on-demand providers
+- validate product setup
+
+Use modular integrations such as:
+
+PrintOnDemandProvider
+
+Products should be created as DRAFTS by default.
+
+Live publishing must follow approval policies.
+
+==================================================
+6. TECHNOLOGY DEPARTMENT
+==================================================
+
+Дмитрий — Chief Technology Officer
+
+Дмитрий manages company technology and storefront engineering.
+
+Responsibilities:
+
+- technical roadmap
+- architecture
+- storefront technical health
+- integration health
+- performance
+- web development
+- technical SEO
+- security coordination
+- technical issue prioritization
+- incident coordination
+- technology reporting
+- report to Борис
+
+Дмитрий manages:
+
+Sarah — Web Design & Development Specialist
+
+Wilhelm — UX/UI Researcher
+
+
+Sarah — Web Design & Development Specialist
+
+Responsibilities:
+
+- Shopify theme development
+- responsive web design
+- landing pages
+- navigation
+- page layouts
+- accessibility implementation
+- page performance
+- technical SEO
+- storefront presentation
+- conversion-oriented improvements
+- implementation of approved UX recommendations
+
+Significant production changes require approval.
+
+Maintain rollback or version history where technically feasible.
+
+
+Wilhelm — UX/UI Researcher
+
+Responsibilities:
+
+- UX research
+- UI research
+- competitor UX analysis
+- navigation analysis
+- mobile UX research
+- accessibility research
+- checkout-friction analysis
+- product-page research
+- collection-page research
+- information architecture
+- customer journey research
+- conversion-friction analysis
+
+Wilhelm produces UX Recommendation Reports.
+
+Report structure:
+
+PROBLEM
+
+EVIDENCE
+
+CUSTOMER IMPACT
+
+PROPOSED CHANGE
+
+EXPECTED IMPACT
+
+MEASUREMENT PLAN
+
+PRIORITY
+
+CONFIDENCE
+
+Approved recommendations can be assigned to Sarah.
+
+==================================================
+7. ANALYTICS & STRATEGY DEPARTMENT
+==================================================
+
+София — Director of Analytics & Strategy
+
+Responsibilities:
+
+- oversee business intelligence
+- oversee company strategy
+- maintain metric definitions
+- ensure recommendations are data grounded
+- coordinate Analytics with every department
+- maintain executive KPIs
+- identify measurement gaps
+- report to Борис
+
+София should have broad READ access but limited direct WRITE access.
+
+София manages:
+
+Benjamin — Business Intelligence Analyst
+
+Мария — Business Strategy Analyst
+
+
+Benjamin — Business Intelligence Analyst
+
+Responsibilities:
+
+Track:
+
+- revenue
+- orders
+- units sold
+- average order value
+- conversion rate when available
+- traffic
+- product views
+- add-to-cart activity
+- checkout activity
+- repeat purchase rate
+- refund rate
+- return rate
+- product performance
+- design performance
+- campaign performance
+- inventory
+- gross margin where cost data exists
+- customer acquisition metrics where data exists
+
+Support:
+
+- daily comparisons
+- weekly comparisons
+- monthly comparisons
+- annual comparisons when sufficient data exists
+
+Benjamin should detect anomalies.
+
+Example:
+
+"Traffic increased 18% but conversion declined 7% compared with last week."
+
+Benjamin should report uncertainty where appropriate.
+
+Do not infer causation from correlation without evidence.
+
+
+Мария — Business Strategy Analyst
+
+Мария converts business data into recommendations.
+
+Responsibilities:
+
+- identify growth opportunities
+- identify underperforming products
+- identify strong products
+- identify successful niches
+- identify successful visual patterns
+- identify marketing opportunities
+- recommend experiments
+- recommend pricing tests
+- recommend product priorities
+- recommend retirement candidates
+- connect research with actual outcomes
+- identify strategic risks
+- propose operational improvements
+
+Мария must clearly separate:
+
+DATA
+
+INTERPRETATION
+
+HYPOTHESIS
+
+RECOMMENDATION
+
+Мария cannot directly execute high-impact changes.
+
+==================================================
+8. CUSTOMER INTELLIGENCE DEPARTMENT
+==================================================
+
+Oliver — Director of Customer Intelligence
+
+Responsibilities:
+
+- oversee customer research
+- oversee personas
+- manage voice-of-customer intelligence
+- coordinate support insights
+- identify recurring customer issues
+- provide insights to Product and Marketing
+- report to Борис
+
+Oliver manages:
+
+Николай — Customer Research Analyst
+
+Jessica — Customer Persona & Voice-of-Customer Specialist
+
+Андрей — Customer Support Specialist
+
+
+Николай — Customer Research Analyst
+
+Analyze legally available customer information such as:
+
+- reviews
+- support conversations
+- returns
+- refunds
+- repeat purchases
+- purchase patterns
+- product combinations
+- surveys
+- customer feedback
+- cart/checkout information where permitted
+
+Identify:
+
+- recurring complaints
+- desired products
+- desired designs
+- objections
+- buying motivations
+- recurring language
+- product quality issues
+- unmet needs
+- emerging preferences
+
+Respect:
+
+- privacy
+- consent
+- data minimization
+- relevant policy
+
+
+Jessica — Customer Persona & Voice-of-Customer Specialist
+
+Jessica creates evidence-based customer personas.
+
+Persona fields:
+
+- persona ID
+- persona name
+- summary
+- interests
+- purchasing behavior
+- preferred products
+- aesthetic preferences
+- price sensitivity
+- average order value
+- objections
+- motivations
+- recurring customer language
+- channel preferences
+- unmet needs
+- confidence
+- supporting evidence
+- last updated
+
+Do not fabricate personas from stereotypes.
+
+Clearly separate:
+
+OBSERVED ATTRIBUTES
+
+INFERRED ATTRIBUTES
+
+Personas should be available to:
+
+- Marketing
+- Product
+- Design Research
+- Analytics
+- Борис
+
+
+Андрей — Customer Support Specialist
+
+Responsibilities:
+
+- classify support requests
+- draft support responses
+- retrieve authorized order information
+- identify returns
+- identify refund situations
+- identify recurring issues
+- escalate unusual cases
+- produce support-derived insights
+
+Initial mode:
+
+DRAFT ONLY.
+
+Do not automatically send communications until the CEO explicitly enables this capability.
+
+Refunds above configurable limits require approval.
+
+==================================================
+9. OPERATIONS DEPARTMENT
+==================================================
+
+Rachel — Director of Operations
+
+Responsibilities:
+
+- monitor operational health
+- monitor orders
+- monitor fulfillment
+- monitor inventory
+- monitor shipping problems
+- monitor cancellations
+- monitor returns
+- manage incidents
+- coordinate with Product
+- report to Борис
+
+Rachel manages:
+
+Сергей — Store Operations Specialist
+
+
+Сергей — Store Operations Specialist
+
+Use Shopify webhooks and APIs to monitor:
+
+- new orders
+- order changes
+- fulfillment events
+- inventory changes
+- cancellations
+- refunds
+- product changes
+
+Create structured operational alerts.
+
+Example:
+
+WARNING
+
+Product:
+Product X
+
+Available Inventory:
+8
+
+Recent Average Daily Sales:
+4.2
+
+Estimated Stockout:
+Approximately 2 days if recent sales velocity continues.
+
+Recommended Action:
+Review replenishment options.
+
+Do not fabricate inventory or supplier data.
+
+==================================================
+10. QUALITY & COMPLIANCE
+==================================================
+
+Виктория — Quality & Compliance Officer
+
+Виктория operates independently.
+
+She does not report through a normal department hierarchy.
+
+She may block actions.
+
+Responsibilities:
+
+- audit AI actions
+- enforce approval rules
+- enforce tool permissions
+- monitor unsafe automation
+- monitor data handling
+- review major publishing actions
+- monitor brand safety
+- detect destructive behavior
+- detect authority violations
+- monitor privacy rules
+- review compliance logs
+- escalate serious issues
+
+Serious incidents should be reported directly to:
+
+- Борис
+- CEO
+
+No department head can automatically override Виктория.
+
+==================================================
+11. SHARED COMPANY MEMORY
+==================================================
+
+Build one structured Company Knowledge Base.
+
+Do not rely only on chat transcripts.
+
+Knowledge categories should include:
+
+- market research
+- competitors
+- customer insights
+- personas
+- product opportunities
+- design research
+- Design Briefs
+- generated designs
+- QA reviews
+- product launches
+- product performance
+- campaigns
+- campaign results
+- experiments
+- UX research
+- website changes
+- operational incidents
+- CEO decisions
+- agent decisions
+- lessons learned
+
+Memory fields:
+
+- ID
+- type
+- title
+- body
+- created_at
+- updated_at
+- created_by
+- department
+- source
+- evidence
+- confidence
+- tags
+- relationships
+- status
+- review date
+- expiration date
+
+Implement semantic retrieval where useful.
+
+Agents should retrieve only relevant information.
+
+Do not place the entire memory database into every model request.
+
+Research that can become outdated must have timestamps.
+
+Mark stale information clearly.
+
+==================================================
+12. BUSINESS LEARNING LOOP
+==================================================
+
+The company must learn from real outcomes.
+
+Target loop:
+
+Market Research
+
+↓
+
+Product Research
+
+↓
+
+Design Research
+
+↓
+
+Design Generation
+
+↓
+
+QA
+
+↓
+
+Product Build
+
+↓
+
+Approval
+
+↓
+
+Publishing
+
+↓
+
+Marketing
+
+↓
+
+Sales
+
+↓
+
+Analytics
+
+↓
+
+Customer Intelligence
+
+↓
+
+Strategy
+
+↓
+
+Company Memory
+
+↓
+
+Future Research
+
+Example:
+
+Mason identifies a rising trend.
+
+Marisha identifies a commercial opportunity.
+
+Марк creates a Design Brief.
+
+Jack generates five concepts.
+
+Garry approves three.
+
+Tyler creates three Shopify drafts.
+
+The CEO approves two.
+
+Катерина launches marketing.
+
+Benjamin observes that one design significantly outperforms the other.
+
+Николай identifies positive customer language around the winning theme.
+
+Jessica updates the relevant persona.
+
+Мария concludes that the visual theme should be tested again.
+
+That lesson enters Company Memory.
+
+Future Design Briefs can use the result.
+
+This closed-loop behavior is essential.
+
+==================================================
+13. PROJECT AND TASK ENGINE
+==================================================
+
+Create durable projects and tasks.
+
+Project fields:
+
+- project ID
+- name
+- objective
+- owner
+- originating request
+- priority
+- status
+- start date
+- target completion
+- business KPI
+- departments involved
+
+Task fields:
+
+- task ID
+- project ID
+- parent task ID
+- requested by
+- assigned agent
+- department
+- objective
+- priority
+- status
+- dependencies
+- inputs
+- expected output
+- actual output
+- created_at
+- due_at
+- completed_at
+- approval required
+- approval state
+- retry count
+- error
+- associated artifacts
+- associated research
+- cost
+
+Task statuses:
+
+QUEUED
+
+WORKING
+
+WAITING
+
+WAITING FOR AGENT
+
+WAITING FOR CEO
+
+BLOCKED
+
+FAILED
+
+COMPLETE
+
+CANCELLED
+
+The CEO must be able to inspect task lineage.
+
+==================================================
+14. INTER-AGENT COMMUNICATION
+==================================================
+
+Do not allow unlimited free-form agent conversations.
+
+Use structured communication.
+
+Inter-agent messages should include:
+
+FROM
+
+TO
+
+PROJECT
+
+TASK
+
+OBJECTIVE
+
+CONTEXT
+
+REQUEST
+
+EXPECTED OUTPUT
+
+PRIORITY
+
+DEADLINE
+
+ARTIFACT REFERENCES
+
+Agents should reference stored artifacts whenever possible.
+
+Prevent:
+
+- infinite loops
+- circular delegation
+- repeated duplicate requests
+- excessive context duplication
+
+Implement:
+
+- delegation depth limit
+- timeout
+- duplicate task detection
+- retry policy
+- loop detection
+
+==================================================
+15. AUTONOMY LEVELS
+==================================================
+
+Implement GREEN, YELLOW, and RED actions.
+
+GREEN:
+
+May happen automatically.
+
+Examples:
+
+- internal research
+- reports
+- analysis
+- trend monitoring
+- internal recommendations
+- design generation
+- draft copy
+- anomaly detection
+- persona updates
+- UX research
+
+YELLOW:
+
+Requires approval by default.
+
+Examples:
+
+- publishing products
+- changing live prices
+- launching marketing campaigns
+- sending customer messages
+- changing storefront content
+- creating discounts
+- changing collections
+- modifying live descriptions
+- changing product availability
+
+RED:
+
+Always requires explicit CEO authorization.
+
+Examples:
+
+- paid advertising spend
+- significant refunds
+- bulk price changes
+- product deletion
+- destructive database actions
+- security configuration changes
+- payment configuration
+- new integration permissions
+- large financial commitments
+
+Thresholds must be configurable.
+
+No agent may approve its own restricted action.
+
+==================================================
+16. CEO COMMAND CENTER
+==================================================
+
+Build a polished executive interface.
+
+Navigation:
+
+COMMAND CENTER
+
+DEPARTMENTS
+
+AGENTS
+
+PROJECTS
+
+TASKS
+
+APPROVALS
+
+PRODUCT PIPELINE
+
+DESIGN STUDIO
+
+MARKETING
+
+ANALYTICS
+
+CUSTOMERS
+
+OPERATIONS
+
+TECHNOLOGY
+
+RESEARCH LIBRARY
+
+COMPANY MEMORY
+
+EXPERIMENTS
+
+NOTIFICATIONS
+
+AUDIT LOG
+
+SETTINGS
+
+The interface should feel like managing a company.
+
+Not like managing raw AI processes.
+
+==================================================
+17. MAIN DASHBOARD
+==================================================
+
+Display:
+
+- today's revenue
+- orders
+- average order value
+- conversion rate
+- traffic
+- best-selling product
+- weakest product
+- marketing performance
+- inventory alerts
+- pending approvals
+- agents active
+- tasks active
+- tasks failed
+- products in development
+- designs generated
+- research discoveries
+- customer issues
+- operational issues
+- active experiments
+- AI spend
+- recommended actions
+
+Include a prominent:
+
+ASK БОРИС
+
+chat interface.
+
+==================================================
+18. AGENT PROFILE SYSTEM
+==================================================
+
+Clicking an agent should display:
+
+- name
+- title
+- department
+- manager
+- status
+- current task
+- current project
+- task history
+- success metrics
+- KPIs
+- recent decisions
+- tools
+- permissions
+- scheduled work
+- memory access
+- recent communication
+- model being used
+- AI usage/cost
+
+Allow direct communication with the selected agent.
+
+==================================================
+19. MORNING REPORT
+==================================================
+
+Борис generates a configurable morning report.
+
+Sections:
+
+YESTERDAY
+
+Revenue
+
+Orders
+
+AOV
+
+Conversion
+
+Best Product
+
+Weakest Product
+
+
+MARKETING
+
+Campaign performance
+
+Research discoveries
+
+Marketing opportunities
+
+
+PRODUCT
+
+Products under research
+
+Designs created
+
+Designs approved
+
+Products created
+
+Products waiting approval
+
+
+CUSTOMERS
+
+New insights
+
+Complaints
+
+Persona changes
+
+
+OPERATIONS
+
+Inventory warnings
+
+Fulfillment issues
+
+Returns
+
+Refunds
+
+
+TECHNOLOGY
+
+Website problems
+
+UX issues
+
+Performance issues
+
+
+TODAY
+
+Agent priorities
+
+Projects moving today
+
+
+CEO ACTION REQUIRED
+
+Approvals
+
+Blocked decisions
+
+
+БОРИС' RECOMMENDATIONS
+
+Return approximately 3–5 highest-priority recommendations by default.
+
+==================================================
+20. WEEKLY EXECUTIVE REVIEW
+==================================================
+
+Compare this week with the previous comparable period.
+
+Include:
+
+- revenue
+- orders
+- AOV
+- conversion
+- traffic
+- marketing
+- products
+- customers
+- returns
+- refunds
+- inventory
+- designs
+- experiments
+- research
+- AI operating cost
+
+Sections:
+
+WHAT WORKED
+
+WHAT DID NOT WORK
+
+WHAT WE LEARNED
+
+WHAT CHANGED
+
+WHAT WE SHOULD TEST
+
+WHAT SHOULD WE STOP
+
+WHAT REQUIRES CEO ATTENTION
+
+Do not present uncertain interpretations as facts.
+
+==================================================
+21. SHOPIFY INTEGRATION
+==================================================
+
+Use Shopify's supported GraphQL Admin API.
+
+Use least-privilege access.
+
+Do not expose credentials in the frontend.
+
+Create a Shopify integration service layer.
+
+Examples:
+
+ShopifyService
+
+ProductService
+
+OrderService
+
+InventoryService
+
+CustomerService
+
+AnalyticsService
+
+WebhookService
+
+Do not scatter API calls across the application.
+
+Implement secure authentication.
+
+Use webhooks where appropriate.
+
+Webhook processing must be:
+
+- authenticated
+- idempotent
+- retry-safe
+- logged
+- asynchronous when appropriate
+
+==================================================
+22. PROVIDER ABSTRACTION
+==================================================
+
+Use provider interfaces.
+
+Potential interfaces:
+
+ImageGenerationProvider
+
+PrintOnDemandProvider
+
+EmailProvider
+
+SearchProvider
+
+AnalyticsProvider
+
+SocialMediaProvider
+
+AdvertisingProvider
+
+StorageProvider
+
+LLMProvider
+
+Do not hardcode core business architecture to one provider.
+
+When an integration is unavailable:
+
+Return:
+
+INTEGRATION REQUIRED
+
+Never fabricate external results.
+
+==================================================
+23. AGENT RUNTIME
+==================================================
+
+Use a manager/specialist architecture.
+
+Борис coordinates company workflows.
+
+Department heads coordinate department workflows.
+
+Specialists perform specialist tasks.
+
+Specialists should generally not delegate to unrelated specialists without routing through a department head or Борис.
+
+Use:
+
+- typed schemas
+- structured tools
+- validated outputs
+- durable state
+- provider abstractions
+- agent definitions
+- task state
+- permission enforcement
+
+Do not rely on one persistent uncontrolled conversation.
+
+==================================================
+24. DECISION RECORDS
+==================================================
+
+Do not expose hidden chain-of-thought.
+
+Instead create Decision Records.
+
+Decision Record:
+
+- decision ID
+- agent
+- task
+- project
+- decision
+- evidence
+- sources
+- confidence
+- timestamp
+- action taken
+- approval state
+- outcome
+
+This should give the CEO meaningful transparency without exposing hidden reasoning.
+
+==================================================
+25. RESEARCH LIBRARY
+==================================================
+
+Research Library supports:
+
+- search
+- topics
+- tags
+- department
+- agent
+- date
+- source
+- status
+- confidence
+- related products
+- related personas
+- related experiments
+
+Tags may include:
+
+TREND
+
+COMPETITOR
+
+PRODUCT
+
+DESIGN
+
+CUSTOMER
+
+MARKETING
+
+SEO
+
+UX
+
+TECHNOLOGY
+
+OPERATIONS
+
+Statuses:
+
+ACTIVE
+
+NEEDS VERIFICATION
+
+STALE
+
+SUPERSEDED
+
+REJECTED
+
+==================================================
+26. EXPERIMENT SYSTEM
+==================================================
+
+Experiment types:
+
+- product test
+- pricing test
+- creative test
+- design-style test
+- email test
+- promotion test
+- landing-page test
+- UX test
+
+Experiment fields:
+
+- hypothesis
+- owner
+- project
+- baseline
+- variant
+- metric
+- target
+- start date
+- end date
+- result
+- confidence
+- business impact
+- decision
+- lesson learned
+
+Lessons automatically become candidates for Company Memory.
+
+==================================================
+27. DATABASE
+==================================================
+
+Use a relational database.
+
+Suggested entities:
+
+users
+
+companies
+
+stores
+
+departments
+
+agents
+
+agent_permissions
+
+projects
+
+tasks
+
+task_dependencies
+
+agent_messages
+
+approvals
+
+research_items
+
+research_sources
+
+product_opportunities
+
+products
+
+design_briefs
+
+design_assets
+
+design_reviews
+
+campaigns
+
+campaign_metrics
+
+customer_insights
+
+customer_personas
+
+support_cases
+
+orders_cache
+
+inventory_snapshots
+
+analytics_snapshots
+
+experiments
+
+memory_items
+
+decision_records
+
+agent_runs
+
+tool_calls
+
+audit_logs
+
+notifications
+
+webhook_events
+
+integration_credentials
+
+settings
+
+brand_bible
+
+Use:
+
+- migrations
+- indexes
+- foreign keys
+- timestamps
+- validation constraints
+- transaction safety
+- soft deletion where appropriate
+
+Never store secrets in plain text.
+
+==================================================
+28. BRAND BIBLE
+==================================================
+
+Create persistent Brand Bible configuration.
+
+Fields:
+
+- company name
+- mission
+- value proposition
+- tone
+- personality
+- customers
+- audiences
+- product categories
+- colors
+- fonts
+- logos
+- visual principles
+- prohibited topics
+- prohibited visual elements
+- pricing philosophy
+- marketing principles
+- approved terminology
+- disallowed terminology
+
+Relevant agents must use Brand Bible context.
+
+==================================================
+29. SECURITY
+==================================================
+
+Security is mandatory.
+
+Implement:
+
+- server-side authentication
+- role-based permissions
+- secure sessions
+- encrypted secrets
+- environment-based credentials
+- input validation
+- rate limiting
+- CSRF protection where relevant
+- webhook validation
+- least-privilege Shopify scopes
+- database authorization
+- safe error handling
+- audit logging
+- dependency auditing
+- secure headers
+- secret rotation support where practical
+
+No credentials in source control.
+
+Create .env.example only.
+
+Agents should never directly read raw credentials.
+
+Tools should execute credentialed operations.
+
+==================================================
+30. AUDITING
+==================================================
+
+Every consequential action should produce an audit event.
+
+Audit fields:
+
+- user/agent
+- department
+- task
+- project
+- tool
+- action
+- resource
+- timestamp
+- result
+- approval
+- error
+- associated artifact
+
+Filters:
+
+- agent
+- department
+- project
+- action
+- status
+- date
+- resource
+
+==================================================
+31. FAILURE HANDLING
+==================================================
+
+Never fabricate successful execution.
+
+If Shopify returns an error:
+
+Mark the task FAILED or RETRYING.
+
+Do not claim the product was created.
+
+If an integration fails repeatedly:
+
+Escalate.
+
+If the system cannot verify data:
+
+Say that the data could not be verified.
+
+Do not invent missing business information.
+
+==================================================
+32. COST MANAGEMENT
+==================================================
+
+Track AI and external tool usage.
+
+Fields:
+
+- agent
+- model
+- provider
+- task
+- tokens
+- estimated cost
+- API calls
+- image generations
+- external tool cost
+- date
+
+Allow CEO configuration:
+
+- daily AI budget
+- monthly budget
+- per-agent budget
+- per-department budget
+- generation limits
+- research limits
+- schedule frequency
+
+If budget limits are reached:
+
+Pause optional tasks.
+
+Notify Борис.
+
+==================================================
+33. NOTIFICATION SYSTEM
+==================================================
+
+Priorities:
+
+INFO
+
+ACTION REQUIRED
+
+WARNING
+
+CRITICAL
+
+Examples:
+
+INFO:
+Jack generated five concepts.
+
+ACTION REQUIRED:
+Three products are awaiting approval.
+
+WARNING:
+Product inventory is projected to run low.
+
+CRITICAL:
+Shopify authentication failed.
+
+Consolidate duplicate alerts.
+
+==================================================
+34. AUTOMATION SCHEDULES
+==================================================
+
+Schedules must be configurable.
+
+Default suggestions:
+
+Mason:
+Daily market research.
+
+Марк:
+Daily design research.
+
+Jack:
+Daily design generation.
+
+Benjamin:
+Daily business analysis.
+
+Николай:
+Daily customer insight analysis.
+
+Сергей:
+Event-driven operations.
+
+Wilhelm:
+Weekly UX/UI research.
+
+Мария:
+Weekly strategy analysis.
+
+Борис:
+Daily morning report.
+
+Борис:
+Weekly executive review.
+
+Do not run expensive jobs unnecessarily.
+
+==================================================
+35. CEO CONTROLS
+==================================================
+
+The human CEO has ultimate authority.
+
+Create controls:
+
+PAUSE COMPANY
+
+PAUSE DEPARTMENT
+
+PAUSE AGENT
+
+RESUME AGENT
+
+CANCEL TASK
+
+APPROVE
+
+REJECT
+
+RETRY
+
+CHANGE SCHEDULE
+
+CHANGE PERMISSIONS
+
+CHANGE BUDGET
+
+CHANGE AUTONOMY
+
+ROLLBACK
+
+EMERGENCY STOP
+
+Emergency Stop must prevent all new external write actions while preserving:
+
+- data
+- audit logs
+- current task state
+- history
+
+==================================================
+36. PRODUCT PIPELINE UI
+==================================================
+
+Create a Kanban pipeline.
+
+Stages:
+
+RESEARCH
+
+OPPORTUNITY
+
+DESIGN RESEARCH
+
+DESIGNING
+
+QA
+
+PRODUCT BUILD
+
+AWAITING APPROVAL
+
+PUBLISHED
+
+MARKETING
+
+MEASURING
+
+ITERATING
+
+Every product should show lineage.
+
+Example:
+
+Mason Research
+
+↓
+
+Marisha Product Opportunity
+
+↓
+
+Марк Design Brief
+
+↓
+
+Jack Design
+
+↓
+
+Garry QA
+
+↓
+
+Tyler Product
+
+↓
+
+Катерина Campaign
+
+↓
+
+Benjamin Performance
+
+↓
+
+Николай Customer Response
+
+↓
+
+Мария Analysis
+
+↓
+
+Company Memory
+
+==================================================
+37. AGENT PERFORMANCE
+==================================================
+
+Measure agent performance using business outcomes.
+
+Examples:
+
+Mason:
+Research opportunities that result in successful tests.
+
+Marisha:
+Product opportunity hit rate.
+
+Марк:
+Design Brief performance.
+
+Jack:
+QA pass rate.
+
+Garry:
+Post-publication defect rate.
+
+Tyler:
+Product creation success rate.
+
+Катерина:
+Campaign performance versus objective.
+
+Benjamin:
+Data freshness and analysis accuracy.
+
+Wilhelm:
+UX recommendations validated by experiments.
+
+Agents may not manually alter their own performance metrics.
+
+==================================================
+38. COMPLETE AGENT ROSTER
+==================================================
+
+EXECUTIVE
+
+Борис — Chief Operating Officer
+
+
+MARKETING
+
+Анна — Director of Marketing
+
+Mason — Market Research Analyst
+
+Катерина — Marketing Campaign Manager
+
+
+PRODUCT
+
+Алекс — Director of Product
+
+Marisha — Product Research Analyst
+
+Марк — Design Research Analyst
+
+Jack — Daily Design Generation Specialist
+
+Garry — Design Quality Assurance Specialist
+
+Tyler — Product Production Specialist
+
+
+TECHNOLOGY
+
+Дмитрий — Chief Technology Officer
+
+Sarah — Web Design & Development Specialist
+
+Wilhelm — UX/UI Researcher
+
+
+ANALYTICS & STRATEGY
+
+София — Director of Analytics & Strategy
+
+Benjamin — Business Intelligence Analyst
+
+Мария — Business Strategy Analyst
+
+
+CUSTOMER INTELLIGENCE
+
+Oliver — Director of Customer Intelligence
+
+Николай — Customer Research Analyst
+
+Jessica — Customer Persona & Voice-of-Customer Specialist
+
+Андрей — Customer Support Specialist
+
+
+OPERATIONS
+
+Rachel — Director of Operations
+
+Сергей — Store Operations Specialist
+
+
+QUALITY & COMPLIANCE
+
+Виктория — Quality & Compliance Officer
+
+
+TOTAL INITIAL AI WORKFORCE:
+
+22 agents.
+
+==================================================
+39. DEVELOPMENT PHASES
+==================================================
+
+Build this system incrementally.
+
+Do not attempt to build every integration simultaneously.
+
+------------------------------
+PHASE 0 — REPOSITORY DISCOVERY
+------------------------------
+
+Before coding:
+
+Inspect the repository.
+
+Identify:
+
+- frontend
+- backend
+- database
+- authentication
+- current Shopify integration
+- current AI code
+- tests
+- deployment
+- environment variables
+- security concerns
+- reusable code
+- technical debt
+- missing architecture
+
+Produce:
+
+1. Repository assessment
+2. Architecture assessment
+3. Proposed architecture
+4. Database plan
+5. Agent architecture
+6. Permission matrix
+7. Approval matrix
+8. Shopify integration plan
+9. Provider plan
+10. Security plan
+11. Implementation roadmap
+12. File/module plan
+
+Do not unnecessarily rewrite working code.
+
+------------------------------
+PHASE 1 — PLATFORM FOUNDATION
+------------------------------
+
+Build:
+
+- authentication
+- company model
+- store model
+- CEO role
+- departments
+- agents
+- org chart
+- projects
+- tasks
+- approvals
+- notifications
+- audit system
+- Company Memory
+- Research Library
+- permissions
+- secret management
+- provider interfaces
+- emergency stop
+- agent pause/resume
+- basic Command Center
+- Ask Борис interface
+
+At Phase 1 completion:
+
+CEO can log in.
+
+CEO can view agents.
+
+CEO can communicate with Борис.
+
+CEO can see tasks.
+
+CEO can see approvals.
+
+CEO can pause agents.
+
+CEO can inspect audit logs.
+
+------------------------------
+PHASE 2 — SHOPIFY READ ACCESS
+------------------------------
+
+Connect Shopify securely.
+
+Read:
+
+- products
+- orders
+- inventory
+- fulfillment
+- refunds
+- customers when permitted
+- store metrics
+
+Build internal normalized data models.
+
+Борис should now answer:
+
+"What sold best this week?"
+
+"What products are low?"
+
+"How many orders were placed?"
+
+"What products are underperforming?"
+
+------------------------------
+PHASE 3 — ANALYTICS
+------------------------------
+
+Activate:
+
+София
+
+Benjamin
+
+Мария
+
+Build:
+
+- KPI system
+- daily snapshots
+- weekly comparisons
+- monthly comparisons
+- anomaly detection
+- strategy recommendations
+- reports
+- experiments
+
+------------------------------
+PHASE 4 — MARKET & PRODUCT RESEARCH
+------------------------------
+
+Activate:
+
+Анна
+
+Mason
+
+Алекс
+
+Marisha
+
+Build:
+
+- research pipelines
+- market research
+- source provenance
+- trend analysis
+- Product Opportunity Reports
+- competitor research
+- research freshness
+
+Workflow:
+
+Mason
+→ Marisha
+→ Алекс
+→ Борис
+
+------------------------------
+PHASE 5 — DESIGN SYSTEM
+------------------------------
+
+Activate:
+
+Марк
+
+Jack
+
+Garry
+
+Build:
+
+- Design Briefs
+- design research
+- image generation provider
+- generation queue
+- asset storage
+- asset versioning
+- QA reviews
+- revisions
+- Design Studio
+- generation budgets
+
+Workflow:
+
+Марк
+→ Jack
+→ Garry
+
+------------------------------
+PHASE 6 — PRODUCT FACTORY
+------------------------------
+
+Activate:
+
+Tyler
+
+Build:
+
+- Shopify write layer
+- product templates
+- product mockups
+- variants
+- pricing proposals
+- titles
+- descriptions
+- SEO
+- collections
+- Shopify drafts
+- print provider abstraction
+- product pipeline
+
+Default:
+
+Create DRAFT products.
+
+Do not auto-publish.
+
+------------------------------
+PHASE 7 — MARKETING
+------------------------------
+
+Activate:
+
+Катерина
+
+Build:
+
+- campaign objects
+- campaign calendar
+- copy generation
+- social drafts
+- email drafts
+- launch planning
+- SEO recommendations
+- A/B tests
+- campaign measurement
+
+Paid advertising remains RED approval.
+
+------------------------------
+PHASE 8 — CUSTOMER INTELLIGENCE
+------------------------------
+
+Activate:
+
+Oliver
+
+Николай
+
+Jessica
+
+Андрей
+
+Build:
+
+- customer insights
+- Voice-of-Customer system
+- personas
+- persona versioning
+- recurring complaint detection
+- support classification
+- response drafting
+- support analytics
+
+Keep Андрей in DRAFT mode initially.
+
+------------------------------
+PHASE 9 — TECHNOLOGY & UX
+------------------------------
+
+Activate:
+
+Дмитрий
+
+Sarah
+
+Wilhelm
+
+Build:
+
+- website health monitoring
+- UX research
+- UX Recommendation Reports
+- site performance monitoring
+- accessibility checks
+- mobile UX analysis
+- web improvement pipeline
+
+------------------------------
+PHASE 10 — OPERATIONS
+------------------------------
+
+Activate:
+
+Rachel
+
+Сергей
+
+Implement webhooks.
+
+Events:
+
+- orders
+- fulfillment
+- inventory
+- refunds
+- cancellations
+- products
+
+Build:
+
+- event validation
+- deduplication
+- operations alerts
+- inventory alerts
+- incidents
+- escalation
+
+------------------------------
+PHASE 11 — QUALITY & COMPLIANCE
+------------------------------
+
+Fully activate:
+
+Виктория
+
+Build:
+
+- authority enforcement
+- approval enforcement
+- destructive-action controls
+- privacy rules
+- policy blocking
+- security escalation
+- audit review
+- brand safety
+
+------------------------------
+PHASE 12 — CLOSED LOOP
+------------------------------
+
+Connect:
+
+Research
+→ Product Research
+→ Design Research
+→ Generation
+→ QA
+→ Product
+→ Approval
+→ Publishing
+→ Marketing
+→ Analytics
+→ Customer Intelligence
+→ Strategy
+→ Memory
+→ Research
+
+------------------------------
+PHASE 13 — ADVANCED AUTOMATION
+------------------------------
+
+Only after stability:
+
+Enable configurable:
+
+- daily research
+- daily generation
+- product draft creation
+- scheduled reporting
+- campaign drafts
+- automatic experiments
+- inventory forecasting
+- UX monitoring
+
+Each autonomous function must have:
+
+- measurable value
+- permission boundaries
+- safe failure behavior
+- budget controls
+- auditability
+- override
+- approval when needed
+
+------------------------------
+PHASE 14 — AI ORGANIZATION OPTIMIZATION
+------------------------------
+
+Analyze the company itself.
+
+Measure:
+
+- agent usefulness
+- cost efficiency
+- research quality
+- design success
+- campaign success
+- workflow bottlenecks
+- failure rates
+- duplicate work
+- excessive tool usage
+
+Борис may recommend organizational improvements.
+
+Example:
+
+"Jack's QA pass rate fell from 76% to 48% after the Design Brief template changed. Recommend reviewing Марк's prompt framework."
+
+Do not allow AI agents to independently weaken security or approval systems.
+
+------------------------------
+PHASE 15 — PRODUCTION HARDENING
+------------------------------
+
+Before production:
+
+Perform:
+
+- security audit
+- authorization audit
+- permission audit
+- dependency audit
+- secret audit
+- Shopify sandbox testing
+- failure testing
+- duplicate webhook testing
+- backup testing
+- restore testing
+- rollback testing
+- emergency-stop testing
+- AI budget testing
+- privacy review
+- audit verification
+- load testing
+- UI regression testing
+
+==================================================
+40. DEMO MODE
+==================================================
+
+Build a safe demo mode.
+
+Seed:
+
+- fake orders
+- fake products
+- fake customers
+- fake campaigns
+- fake research
+- fake personas
+- fake designs
+- fake alerts
+- fake analytics
+- fake experiments
+
+Label all simulated data clearly.
+
+Do not mix simulated and live data silently.
+
+==================================================
+41. ONBOARDING
+==================================================
+
+Create onboarding:
+
+Step 1:
+Create company
+
+Step 2:
+Connect Shopify
+
+Step 3:
+Define company goals
+
+Step 4:
+Set product categories
+
+Step 5:
+Build Brand Bible
+
+Step 6:
+Set target audiences
+
+Step 7:
+Configure AI providers
+
+Step 8:
+Configure design generation
+
+Step 9:
+Connect print provider
+
+Step 10:
+Connect marketing systems
+
+Step 11:
+Set autonomy
+
+Step 12:
+Set approvals
+
+Step 13:
+Set budgets
+
+Step 14:
+Review org chart
+
+Step 15:
+Activate AI company
+
+==================================================
+42. UI DESIGN PHILOSOPHY
+==================================================
+
+The product should feel like running a digital company.
+
+Design:
+
+- modern
+- executive
+- clean
+- high-information
+- minimal clutter
+- strong typography
+- excellent tables
+- useful charts
+- strong status indicators
+- desktop-focused
+- mobile responsive
+
+Prefer:
+
+"Анна is researching holiday campaigns."
+
+instead of:
+
+"agent_marketing_003 execution running."
+
+Technical implementation information belongs in developer and audit interfaces.
+
+==================================================
+43. TECHNICAL ARCHITECTURE
+==================================================
+
+Inspect the existing stack first.
+
+Prefer:
+
+- strongly typed application code
+- modular monolith initially
+- clean domain services
+- relational database
+- background job system
+- structured API layer
+- testable integration adapters
+- event-driven workflows
+- typed AI outputs
+
+Do not introduce microservices unless clearly justified.
+
+Do not rewrite good existing infrastructure unnecessarily.
+
+==================================================
+44. TESTING
+==================================================
+
+Implement:
+
+- unit tests
+- integration tests
+- API tests
+- database tests
+- permission tests
+- approval tests
+- agent tool tests
+- workflow tests
+- webhook tests
+- security tests
+- critical UI tests
+- failure testing
+
+Mandatory tests:
+
+No agent can bypass approvals.
+
+No agent can approve itself.
+
+Paused agents cannot write externally.
+
+Emergency stop blocks writes.
+
+Duplicate webhooks do not duplicate actions.
+
+Failed external operations are not reported as successful.
+
+Unauthorized agents cannot call restricted tools.
+
+==================================================
+45. DOCUMENTATION
+==================================================
+
+Create:
+
+README.md
+
+ARCHITECTURE.md
+
+AGENTS.md
+
+DATABASE.md
+
+SHOPIFY.md
+
+SECURITY.md
+
+WORKFLOWS.md
+
+PERMISSIONS.md
+
+APPROVALS.md
+
+DEPLOYMENT.md
+
+ENVIRONMENT.md
+
+TESTING.md
+
+OPERATIONS.md
+
+INCIDENT_RESPONSE.md
+
+Document:
+
+- setup
+- environment variables
+- deployment
+- Shopify setup
+- provider integrations
+- database architecture
+- agent creation
+- department creation
+- permission changes
+- approval rules
+- emergency stop
+- backups
+- recovery
+- troubleshooting
+
+==================================================
+46. CODING RULES
+==================================================
+
+Use production-quality code.
+
+Never:
+
+- fake external results
+- silently fail
+- expose secrets
+- create infinite agent loops
+- allow self-approval
+- allow unrestricted destructive actions
+- bypass schemas
+- bypass permissions
+- bypass approvals
+- hardcode one store's assumptions
+- mark incomplete placeholder code as production complete
+
+Always:
+
+- validate AI output
+- use structured schemas
+- use typed interfaces
+- log failures
+- preserve lineage
+- preserve research provenance
+- preserve customer privacy
+- preserve human control
+- write tests for consequential operations
+
+==================================================
+47. DEFINITION OF SUCCESS
+==================================================
+
+The system succeeds when the CEO can log in and say:
+
+"Борис, run the company."
+
+And Борис can coordinate specialized agents that:
+
+- research markets
+- identify business opportunities
+- research products
+- understand customers
+- research design trends
+- create Design Briefs
+- generate original designs
+- perform design QA
+- create product drafts
+- develop marketing campaigns
+- analyze sales
+- monitor inventory
+- identify operational issues
+- monitor customers
+- improve the storefront
+- conduct UX/UI research
+- run experiments
+- learn from outcomes
+- preserve institutional knowledge
+- provide executive recommendations
+
+while the CEO maintains ultimate authority over consequential decisions.
+
+The system should increasingly behave like a coordinated organization with institutional knowledge rather than isolated AI assistants.
+
+==================================================
+48. FIRST ACTION
+==================================================
+
+Do not begin by attempting every phase.
+
+Start with PHASE 0.
+
+Inspect the current repository.
+
+Then produce:
+
+1. Repository Assessment
+2. Current Architecture
+3. Proposed Architecture
+4. Technology Recommendations
+5. Database Schema Proposal
+6. Agent Runtime Architecture
+7. Full Agent Permission Matrix
+8. Approval Matrix
+9. Shopify Integration Strategy
+10. Provider Integration Strategy
+11. Memory Architecture
+12. Task & Workflow Architecture
+13. Security Risks
+14. Implementation Roadmap
+15. File and Module Plan
+16. Testing Strategy
+17. Deployment Strategy
+18. Critical Architectural Decisions
+
+When ordinary engineering judgment can resolve an issue safely, make the decision and document it rather than stopping unnecessarily.
+
+When a decision concerns:
+
+- financial authority
+- customer communications
+- refunds
+- advertising spend
+- destructive actions
+- security
+- privacy
+- Shopify permissions
+
+choose the safer default.
+
+After the Phase 0 architecture review, begin Phase 1.
+
+Implement Phase 1 in small, testable increments.
+
+Do not skip foundational architecture merely to produce visible features faster.
+
+Build this platform so that it can evolve from an AI-assisted Shopify manager into a sophisticated AI business operating system.

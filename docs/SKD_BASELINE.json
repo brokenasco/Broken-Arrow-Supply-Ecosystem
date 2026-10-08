@@ -1,0 +1,13 @@
+{
+  "records": 5000,
+  "iterations": 50,
+  "baseline": {
+    "p50Ms": 10.32630000000006,
+    "p95Ms": 12.85570000000007,
+    "p99Ms": 13.185499999999934,
+    "recallAt10": 0.75
+  },
+  "embeddingCalls": 0,
+  "cache": "NONE",
+  "method": "SQLite in-memory; full-row fetch then browser-equivalent substring filtering; fixed 4-query relevance set including one synonym; not a production load benchmark"
+}

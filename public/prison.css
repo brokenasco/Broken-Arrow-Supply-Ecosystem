@@ -1,0 +1,208 @@
+/* Isometric prison presentation; classic controls retain their APIs. */
+.po {
+  --po-ink: #e1d6be;
+  --po-paper: #242d32;
+  --po-green: #d2ac68;
+  max-width: 1500px;
+  background: #171f24;
+  padding: 18px;
+  color: #e1d6be;
+}
+.po-top {
+  background: #252e33;
+  border-color: #4c5556;
+  box-shadow: 4px 4px #10171b;
+}
+.po-kicker {
+  color: #d6b877;
+}
+.po-layout {
+  display: block;
+}
+.po-elevator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  position: static;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+.po-elevator .po-lift-art,
+.po-elevator h2 {
+  display: none;
+}
+.po-elevator button {
+  width: auto;
+  min-height: 44px;
+  margin: 0;
+}
+.po-elevator,
+.po-floor,
+.po-attention,
+.po-dialog {
+  background: #293238;
+  color: #e1d6be;
+  border-color: #66706b;
+}
+.po-elevator button,
+.po-worker,
+.po button,
+.po-toolbar a,
+.po-button {
+  background: #354046;
+  color: #eddfc1;
+  border-color: #77796a;
+}
+.po a {
+  color: #edc982;
+}
+.po-room {
+  background: #303b40;
+}
+.po-windows {
+  display: none;
+}
+.po-floor {
+  margin-top: 20px;
+}
+.po-floor[hidden] {
+  display: none;
+}
+.po-floor-heading {
+  background: #343e43;
+  color: #e6d2a8;
+}
+.po-floor-links {
+  background: #263238;
+  color: #dec99f;
+}
+.po-room {
+  min-height: 0;
+}
+.po-workers {
+  padding: 10px;
+}
+.po-worker .po-sprite {
+  width: 64px;
+  height: 64px;
+}
+.po-head {
+  color: #edcf90;
+}
+.pr-scene-wrap {
+  overflow: auto;
+  background: radial-gradient(ellipse at 50% 30%, #434637, #1d272d 70%);
+  border: 2px solid #62695e;
+}
+.pr-scene {
+  width: 100%;
+  display: block;
+  font-family: ui-monospace, monospace;
+}
+.pr-person {
+  cursor: pointer;
+}
+.pr-person:focus {
+  outline: none;
+  filter: drop-shadow(0 0 3px #ffda83);
+}
+.pr-person:hover {
+  filter: brightness(1.25);
+}
+.pr-hole {
+  padding: 16px;
+  background: #20292e;
+  border: 1px solid #8c7953;
+  margin-top: 12px;
+}
+.pr-hole button {
+  margin: 5px;
+  min-height: 44px;
+}
+.pr-working .pr-arm {
+  animation: pr-type 0.8s steps(2) infinite;
+}
+.pr-lamp {
+  animation: pr-glow 4s steps(2) infinite;
+}
+@keyframes pr-glow {
+  to {
+    opacity: 0.8;
+  }
+}
+@keyframes pr-type {
+  to {
+    transform: translateY(-2px);
+  }
+}
+.pr-inactive * {
+  animation-play-state: paused !important;
+}
+.pr-offscreen * {
+  animation-play-state: paused !important;
+}
+.po-status {
+  background: #263038;
+  color: #ecd49f;
+}
+.po-alert {
+  background: #333c40;
+  color: #eadab9;
+}
+.po-dialog input,
+.po-dialog textarea,
+.po-dialog select {
+  color: #f5ecd9;
+  background: #1d282e;
+}
+.po :focus-visible {
+  outline: 3px solid #f5c16b;
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .po * {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.po-top {
+  padding: 14px 20px;
+}
+.po h1 {
+  font-size: 24px;
+}
+.po-toolbar {
+  gap: 6px;
+}
+.po-toolbar button,
+.po-toolbar a {
+  padding: 10px;
+}
+@media (max-width: 760px) {
+  .pr-scene {
+    min-width: 700px;
+  }
+  .po {
+    padding: 8px;
+  }
+  .po-layout {
+    display: block;
+  }
+  .po-elevator {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 8px;
+  }
+  .po-elevator h2,
+  .po-lift-art {
+    display: none;
+  }
+  .po-elevator button {
+    min-width: 130px;
+    min-height: 44px;
+  }
+  .po-top {
+    padding: 16px;
+  }
+}

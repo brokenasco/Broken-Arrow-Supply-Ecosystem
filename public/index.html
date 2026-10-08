@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Company OS · Executive Office</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/office.css" />
+    <script src="/workflows.js" defer></script>
+    <script src="/products.js" defer></script>
+    <script src="/marketing.js" defer></script>
+    <script src="/customers.js" defer></script>
+    <script src="/technology.js" defer></script>
+    <script src="/operations.js" defer></script>
+    <script src="/compliance.js" defer></script>
+    <script src="/learning.js" defer></script>
+    <script src="/knowledge.js" defer></script>
+    <script src="/memos.js" defer></script>
+    <script src="/resources.js" defer></script>
+    <link rel="stylesheet" href="/prison.css" />
+    <script src="/prison.js" defer></script>
+    <script src="/office.js" defer></script>
+    <script src="/automation.js" defer></script>
+    <script src="/organization.js" defer></script>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <section id="login" class="login">
+      <div class="login-brand">B<span>↗</span></div>
+      <p class="eyebrow">COMPANY OS / EXECUTIVE ACCESS</p>
+      <h1>Your company.<br />Your command.</h1>
+      <p class="muted">
+        One coordinated organization.<br />Human authority at every
+        consequential step.
+      </p>
+      <form id="login-form">
+        <label
+          >CEO email<input
+            name="email"
+            type="email"
+            autocomplete="username"
+            required /></label
+        ><label
+          >Password<input
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required /></label
+        ><button class="primary">Enter command center <span>→</span></button>
+      </form>
+      <p class="muted small">
+        First visit? Provision your company with <code>npm run setup</code> in
+        the local terminal.
+      </p>
+    </section>
+    <div id="shell" hidden>
+      <aside>
+        <a class="brand" href="#overview"
+          ><span class="brand-mark">B↗</span
+          ><span>COMPANY OS<small>EXECUTIVE WORKSPACE</small></span></a
+        >
+        <div class="company-label" id="company-label"></div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav id="nav"></nav>
+        <div class="sidebar-bottom">
+          <div class="avatar">CEO</div>
+          <div>
+            <strong>Executive office</strong><small>Human authority</small>
+          </div>
+          <button id="logout" class="icon-button" aria-label="Sign out">
+            ↪
+          </button>
+        </div>
+      </aside>
+      <div class="main">
+        <header>
+          <div>
+            <span class="muted">Workspace</span><span class="crumb">/</span
+            ><span id="page-title">Command center</span>
+          </div>
+          <div class="header-actions">
+            <span class="demo-badge">DEMO · NO LIVE DATA</span
+            ><button id="stop" class="danger">Emergency stop</button>
+          </div>
+        </header>
+        <main id="content"></main>
+        <footer>
+          COMPANY OS
+          <span>Phase 1 foundation · External integrations disconnected</span>
+        </footer>
+      </div>
+    </div>
+    <div id="toast" role="status" hidden></div>
+    <dialog id="profile">
+      <button id="close-profile" class="close" aria-label="Close profile">
+        ×
+      </button>
+      <div id="profile-content"></div>
+    </dialog>
+  </body>
+</html>

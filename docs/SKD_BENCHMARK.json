@@ -1,0 +1,53 @@
+{
+  "records": 5000,
+  "iterations": 50,
+  "baseline": {
+    "p50Ms": 11.260800000000017,
+    "p95Ms": 14.618999999999687,
+    "p99Ms": 16.769800000000032,
+    "meanContextBytes": 1814.86,
+    "recallAt10": 0.75
+  },
+  "after": {
+    "p50Ms": 0.2752999999993335,
+    "p95Ms": 0.39829999999983556,
+    "p99Ms": 0.5385999999998603,
+    "meanContextBytes": 515.52,
+    "recallAt10": 1
+  },
+  "embeddingCalls": 0,
+  "cache": "NONE",
+  "queries": [
+    "topic4999",
+    "topic2345",
+    "topic100",
+    "bike"
+  ],
+  "expectedTitles": [
+    "Reference 4999",
+    "Reference 2345",
+    "Reference 100",
+    "Reference 0"
+  ],
+  "method": "Same in-memory SQLite corpus, fixed four-query set, ten warmups. Full-row fetch plus substring filter versus scoped FTS/concept search including transactional telemetry and audit. No network, concurrent-load or production-scale claim. Limited dictionary synonym evaluation, not general semantic accuracy.",
+  "queryPlan": [
+    {
+      "id": 5,
+      "parent": 0,
+      "notused": 132,
+      "detail": "SCAN skd_fts VIRTUAL TABLE INDEX 0:M4"
+    },
+    {
+      "id": 10,
+      "parent": 0,
+      "notused": 45,
+      "detail": "SEARCH m USING INTEGER PRIMARY KEY (rowid=?)"
+    },
+    {
+      "id": 15,
+      "parent": 0,
+      "notused": 44,
+      "detail": "SEARCH k USING COVERING INDEX sqlite_autoindex_skd_metadata_1 (company_id=? AND memory_id=?)"
+    }
+  ]
+}
