@@ -924,7 +924,13 @@ if (
     throw new Error(
       "Foundation server must bind to loopback; hosted deployment requires hardening",
     );
-  const db = openDatabase(process.env.DATABASE_PATH ?? "data/company.sqlite");
+  // Vercel functions have a read-only deployment filesystem. Keep the local
+  // SQLite default for development, but use the writable ephemeral directory
+  // when hosted until the durable Supabase/Postgres adapter is enabled.
+  const databasePath =
+    process.env.DATABASE_PATH ??
+    (process.env.VERCEL ? "/tmp/company.sqlite" : "data/company.sqlite");
+  const db = openDatabase(databasePath);
   const app = createApp(db, origin, process.env.SECURE_COOKIES === "true");
   const stopAutomation =
     process.env.AUTOMATION_ENABLED === "true"
